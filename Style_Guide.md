@@ -14,6 +14,9 @@ This guide provides a comprehensive set of coding conventions and best practices
 - [Memory Management](#memory-management)
 - [Performance Considerations](#performance-considerations)
 - [Safety Considerations](#safety-considerations)
+- [Correctness Considerations](#correctness-considerations)
+- [Design Considerations](#design-considerations)
+- [Tool Usage](#tool-usage)
 
 ## Naming Conventions
 
@@ -22,7 +25,7 @@ This guide provides a comprehensive set of coding conventions and best practices
 - Use descriptive and meaningful names for variables, functions, classes, and other entities.
 - Follow a consistent naming style, such as camelCase for variables and functions, and PascalCase for classes and namespaces.
 - Avoid using single-letter names, except for loop variables or other temporary situations.
-- Don't Name Anything Starting With `_`. If you do, you risk colliding with names reserved for compiler and standard library implementation
+- Don't name anything starting or ending with `_`. If you do, you risk colliding with names reserved for compiler and standard library implementation
 
 ```cpp
 int calculateSum(int num1, int num2) {
@@ -42,9 +45,9 @@ std::string firstName;
 - Prefer constexpr over #define for defining constants.
 
 ```cpp
-constexpr int MAX_ATTEMPTS = 5;
+const std::string logMsg = "[" + severityLevel + "] " + message;
 
-const double PI = 3.14159;
+constexpr PI = 3.14159;
 ```
 
 ### Namespaces
@@ -369,6 +372,7 @@ constexpr double PI = 3.14159;
 ```
 
 ### Avoid Unnecessary Copies
+
 - Use references or const references when passing large objects as function parameters.
 - Use move semantics (std::move()) to transfer ownership instead of making unnecessary copies.
 
@@ -398,7 +402,6 @@ int main() {
     return 0;
 }
 ```
-
 
 ### Avoid Expensive Operations in Loops
 
@@ -462,6 +465,7 @@ std::vector<int> sharedData;
 ## Correctness Considerations
 
 ### Input Validation
+
 - Use assertions and pre/post-conditions to enforce design contracts.
 - Validate assumptions and inputs to ensure correct behavior.
 - Fail fast by terminating the program if contract violations occur.
