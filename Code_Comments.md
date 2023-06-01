@@ -1,10 +1,10 @@
 # C++ Code Comment Style Guide
 
-## 1. Introduction
+## Introduction
 
 This guide outlines the recommended style for writing code comments in C++. Consistent and clear code comments are crucial for enhancing code readability, maintainability, and collaboration within a project.
 
-### 1.1 General Guidelines
+### General Guidelines
 
 * Be concise and clear: Keep comments brief, focusing on important information and providing context where necessary.
 
@@ -16,9 +16,9 @@ This guide outlines the recommended style for writing code comments in C++. Cons
 
 * Avoid unnecessary comments: Remove or update outdated or redundant comments to avoid confusion and maintain code integrity.
 
-## 2. Function and Method Comments
+## Function and Method Comments
 
-### 2.1 Function description
+### Function description
 
 Provide a brief description of the function's purpose, including any inputs, outputs, and side effects.
 
@@ -33,7 +33,7 @@ Provide a brief description of the function's purpose, including any inputs, out
 int calculateSum(int t_a, int t_b);
 ```
 
-### 2.2 Parameter comments
+### Parameter comments
 
 Comment each parameter to describe its purpose, type, and any constraints or expectations.
 
@@ -48,7 +48,7 @@ Comment each parameter to describe its purpose, type, and any constraints or exp
 double calculateProduct(double t_x, double t_y);
 ```
 
-### 2.3 Return value comments
+### Return value comments
 
 Explain the return value of a function or method, including any special conditions or error handling.
 
@@ -63,9 +63,9 @@ Explain the return value of a function or method, including any special conditio
     int findMax(const int* t_arr, size_t t_size);
 ```
 
-## 3. Class and Struct Comments
+## Class and Struct Comments
 
-### 3.1 Class/Struct description
+### Class/Struct description
 
  Provide a brief overview of the purpose and functionality of the class or struct.
 
@@ -78,7 +78,7 @@ struct ContactInfo {
 };
 ```
 
-### 3.2 Member variable comments
+### Member variable comments
 
 Comment each member variable to describe its purpose, type, and any constraints or relationships.
 
@@ -89,7 +89,7 @@ struct Circle {
 };
 ```
 
-### 3.3 Member function comments
+### Member function comments
 
 Follow the same guidelines as function and method comments.
 
@@ -105,9 +105,9 @@ struct Vector2D {
 };
 ```
 
-## 4. File Comments
+## File Comments
 
-### 4.1 File overview
+### File overview
 
 Provide a brief overview of the file's purpose, including its main components and usage.
 
@@ -118,7 +118,7 @@ Provide a brief overview of the file's purpose, including its main components an
  */
 ```
 
-### 4.2 Author and version information
+### Author and version information
 
 Include the author name, creation date, and version information.
 
@@ -133,9 +133,9 @@ Include the author name, creation date, and version information.
  */
  ```
 
-## 5. In-line Comments
+## In-line Comments
 
-### 5.1 Clarification comments
+### Clarification comments
 
 Use comments to clarify complex or non-obvious parts of the code.
 
@@ -143,7 +143,7 @@ Use comments to clarify complex or non-obvious parts of the code.
 int result = calculateSum(a, b); // Calculate the sum of integers a and b.
 ```
 
-### 5.2 TODO and FIXME comments
+### TODO and FIXME comments
 
 Use TODO comments to highlight future improvements or additions and FIXME comments to mark problematic or incorrect code.
 
