@@ -41,7 +41,8 @@ std::string firstName;
 
 ### Constants
 
-- Use uppercase letters and underscores for constant names.
+- Use uppercase letters and underscores for compile time constants.
+- Runtime constants can follow the general naming style
 - Prefer constexpr over #define for defining constants.
 
 ```cpp
