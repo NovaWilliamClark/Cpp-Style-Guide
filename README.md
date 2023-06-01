@@ -368,14 +368,14 @@ std::shared_ptr<MyClass> sharedObject = std::make_shared<MyClass>();
 - Use constexpr for values that can be computed at compile-time.
 
 ```cpp
-const std::string logMsg = "[" + severityLevel + "] " + error;
+const std::string logMsg = "[" + severityLevel + "] " + message;
 constexpr double PI = 3.14159;
 ```
 
 ### Avoid Unnecessary Copies
 
 - Use references or const references when passing large objects as function parameters.
-- Use move semantics (std::move()) to transfer ownership instead of making unnecessary copies.
+- Use move semantics (`std::move()`) to transfer ownership instead of making unnecessary copies.
 
 ```cpp
 // Function that takes a large object by reference
