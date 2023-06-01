@@ -269,14 +269,14 @@ void MyClass::cleanup() {
 ```cpp
 class MyException : public std::exception {
 public:
-    explicit MyException(const std::string& message) : message_(message) {}
+    explicit MyException(const std::string& t_message) : m_message(message) {}
 
     const char* what() const noexcept override {
-        return message_.c_str();
+        return m_message.c_str();
     }
 
 private:
-    std::string message_;
+    std::string m_message;
 };
 
 void someFunction() {
