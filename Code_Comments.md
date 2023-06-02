@@ -65,7 +65,7 @@ Explain the return value of a function or method, including any special conditio
 
 ## Class and Struct Comments
 
-### Class/Struct description
+### Class/Struct/Enum description
 
  Provide a brief overview of the purpose and functionality of the class or struct.
 
