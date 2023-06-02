@@ -24,7 +24,7 @@ Provide a brief description of the function's purpose, including any inputs, out
 
 ```cpp
 /**
- * Calculates the sum of two integers.
+ * @brief Calculates the sum of two integers.
  *
  * @param t_a The first integer.
  * @param t_b The second integer.
@@ -39,7 +39,7 @@ Comment each parameter to describe its purpose, type, and any constraints or exp
 
 ```cpp
 /**
- * Calculates the product of two numbers.
+ * @brief Calculates the product of two numbers.
  *
  * @param t_x The first number.
  * @param t_y The second number.
@@ -54,7 +54,7 @@ Explain the return value of a function or method, including any special conditio
 
 ```cpp
 /**
- * Finds the maximum element in the given array.
+ * @brief Finds the maximum element in the given array.
  *
  * @param t_arr The array of integers.
  * @param t_size The size of the array.
@@ -71,7 +71,7 @@ Explain the return value of a function or method, including any special conditio
 
 ```cpp
 /**
- * Represents a person's contact information.
+ * @struct Represents a person's contact information.
  */
 struct ContactInfo {
     // ...
@@ -96,7 +96,7 @@ Follow the same guidelines as function and method comments.
 ```cpp
 struct Vector2D {
     /**
-     * Calculates the magnitude of the vector.
+     * @brief Calculates the magnitude of the vector.
      *
      * @return The magnitude of the vector.
      */
