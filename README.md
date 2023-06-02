@@ -215,13 +215,11 @@ void printMessage(std::string t_message = "Hello, world!") {
 ```cpp
 class MyClass {
 public:
-    // Public members and functions
 
 protected:
-    // Protected members and functions
 
 private:
-    // Private members and functions
+
 };
 ```
 
